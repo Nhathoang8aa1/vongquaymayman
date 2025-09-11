@@ -366,7 +366,7 @@
       }else{
         setTimeout(()=>{
           if(level<prizeLevels.length-1){
-            lvlup.textContent = "THĂNG CẤP!";
+            lvlup.textContent = "LÊN CẤP!";
             lvlup.className = "show "+levelNames[level+1].toLowerCase();
             setTimeout(()=>{ lvlup.className = ""; },1500);
             setTimeout(()=>{
@@ -451,14 +451,14 @@
       const defaultPrizeLevels = [
         [
           {id:'advance', label:'PLUS', weight:40},
-          {id:'snack',  label:'SNACK', weight:43.6},
-          {id:'drink',  label:'NƯỚC NGỌT', weight:15.0},
-          {id:'combo',  label:'NƯỚC NGỌT + SNACK', weight:1.4}
+          {id:'snack',  label:'+5%', weight:20.0},
+          {id:'drink',  label:'SNACK', weight:20.0},
+          {id:'combo',  label:'NƯỚC NGỌT', weight:20.0}
         ],
         [
           {id:'advance', label:'VIP', weight:30},
-          {id:'drink',  label:'NƯỚC NGỌT', weight:50.0},
-          {id:'combo',  label:'NƯỚC NGỌT + SNACK', weight:11.0},
+          {id:'drink',  label:'+10%', weight:50.0},
+          {id:'combo',  label:'NƯỚC NGỌT', weight:11.0},
           {id:'+20',    label:'+20%', weight:4.0},
           {id:'+25',    label:'+25%', weight:5.0}
         ],
